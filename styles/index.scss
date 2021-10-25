@@ -1,0 +1,20 @@
+@import "../utils/variables";
+@import "../utils/main";
+
+body {
+    background: center / cover no-repeat url(../assets/home/background-home-mobile.jpg);
+}
+
+header {
+    padding: 24px 24px 48px;
+}
+
+main {
+    h2 {
+        margin: 0 0 16px;
+    }
+    h1 {
+        font-size: 80px;
+        margin: 0 0 16px;
+    }
+}

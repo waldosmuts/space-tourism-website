@@ -1,0 +1,114 @@
+@import "../utils/variables";
+@import "../utils/main";
+
+body {
+    background: center / cover no-repeat url(../assets/destination/background-destination-mobile.jpg);
+}
+
+main {
+    padding-bottom: 56px;
+    h2 {
+        color: $-c-white;
+        margin: 0 0 32px;
+        span {
+            opacity: 25%;
+            margin-right: 18px;
+        }
+    }
+    .destination-preview__main {
+        width: 170px;
+        height: 170px;
+        margin-bottom: 26px;
+    }
+    .destination-picker__main {
+        margin-bottom: 32px;
+        span {
+            text-transform: uppercase;
+            font-family: $-f-barlow-condensed;
+            font-size: 14px;
+            letter-spacing: 2.3px;
+            margin: 0 13px;
+            position: relative;
+            padding-bottom: 12px;
+            cursor: pointer;
+            &:hover {
+                color: $-c-white;
+                &::after {
+                    content: "";
+                    background: $-c-white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                }
+            }
+        }
+    }
+    .selected {
+        color: $-c-white;
+        &::after {
+            content: "";
+            background: $-c-white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+        }
+    }
+    h1 {
+        font-size: 56px;
+        margin: 0;
+    }
+    p {
+        margin-bottom: 32px;
+    }
+    .divider {
+        height: 1px;
+        background: #383B4B;
+        width: 100%;
+    }
+    .destination-stat__main {
+        text-align: center;
+        margin-top: 32px;
+        .stat-title__main {
+            font-family: $-f-barlow-condensed;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2.3px;
+            margin-bottom: 12px;
+        }
+        .stat-info__main {
+            font-family: $-f-bellefair;
+            font-size: 28px;
+            color: $-c-white;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+    .animate-next {
+        animation: destination-in 0.5s ease-in reverse, destination-out 0.5s ease-out 0.5s reverse;
+    }
+    .animate-previous {
+        animation: destination-out 0.5s ease-out, destination-in 0.5s ease-in 0.5s;
+    }
+}
+
+@keyframes destination-out {
+    from {
+        transform: translateX(0) scale(1);
+    }
+    to {
+        transform: translateX(100vw) scale(0.1);
+    }
+}
+
+@keyframes destination-in {
+    from {
+        transform: translateX(-100vw) scale(0.1);
+    }
+    to {
+        transform: translateX(0) scale(1);
+    }
+}

@@ -1,0 +1,100 @@
+@import "../utils/variables";
+@import "../utils/main";
+
+body {
+    background: center / cover no-repeat url(../assets/crew/background-crew-mobile.jpg);
+}
+
+main {
+    h2 {
+        color: $-c-white;
+        margin: 0 0 32px;
+        span {
+            opacity: 25%;
+            margin-right: 18px;
+        }
+    }
+    .crew-preview__main {
+        height: 223px;
+    }
+    .crew-picker__main {
+        margin-bottom: 32px;
+        button {
+            background: $-c-white;
+            opacity: 0.2;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 8px;
+            &.selected {
+                opacity: 1;
+            }
+        }
+    }
+    h3, h1 {
+        font-family: $-f-bellefair;
+        font-weight: 400;
+        color: $-c-white;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 16px;
+        opacity: 0.5;
+        margin: 0 0 8px;
+    }
+    h1 {
+        font-size: 24px;
+        margin: 0 0 16px;
+    }
+    p {
+        margin-bottom: 32px;
+    }
+    .divider {
+        height: 1px;
+        background: #383B4B;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .destination-stat__main {
+        text-align: center;
+        margin-top: 32px;
+        .stat-title__main {
+            font-family: $-f-barlow-condensed;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2.3px;
+            margin-bottom: 12px;
+        }
+        .stat-info__main {
+            font-family: $-f-bellefair;
+            font-size: 28px;
+            color: $-c-white;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+    .animate-next {
+        animation: crew-in 0.5s ease-in reverse, crew-out 0.5s ease-out 0.5s reverse;
+    }
+    .animate-previous {
+        animation: crew-out 0.5s ease-out, crew-in 0.5s ease-in 0.5s;
+    }
+}
+
+@keyframes crew-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200vw);
+    }
+}
+
+@keyframes crew-in {
+    from {
+        transform: translateX(-200vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

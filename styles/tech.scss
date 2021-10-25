@@ -1,0 +1,78 @@
+@import "../utils/variables";
+@import "../utils/main";
+
+body {
+    background: center / cover no-repeat url(../assets/technology/background-technology-mobile.jpg);
+}
+
+main {
+    h2 {
+        color: $-c-white;
+        margin: 0 0 32px;
+        span {
+            opacity: 25%;
+            margin-right: 18px;
+        }
+    }
+    .tech-preview__main {
+        width: calc(100% + 48px);
+        height: auto;
+        margin-bottom: 34px;
+    }
+    .tech-picker__main {
+        margin-bottom: 26px;
+        button {
+            font-family: $-f-bellefair;
+            font-size: 16px;
+            color: $-c-white;
+            width: 40px;
+            height: 40px;
+            margin: 0 8px;
+            border-radius: 50%;
+            background: $-c-dark-blue;
+            border: 1px solid $-c-white;
+            &.selected {
+                background: $-c-white;
+                color: $-c-dark-blue;
+            }
+        }
+    }
+    h3 {
+        font-family: $-f-barlow-condensed;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        text-transform: uppercase;
+        margin: 0 0 9px 0;
+    }
+    h1 {
+        font-family: $-f-bellefair;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0 0 16px 0;
+    }
+    .animate-next {
+        animation: tech-in 0.3s linear reverse, tech-out 0.3s linear 0.3s reverse;
+    }
+    .animate-previous {
+        animation: tech-out 0.3s linear, tech-in 0.3s linear 0.3s;
+    }
+}
+
+@keyframes tech-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes tech-in {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

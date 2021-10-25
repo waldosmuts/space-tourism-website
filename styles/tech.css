@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400 !important;
+  color: #d2d8f9;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px;
+}
+
+header .home__header, header .toggle-nav__header, header .close-nav__header {
+  cursor: pointer;
+}
+
+header .home__header img {
+  width: 40px;
+  height: 40px;
+}
+
+header .toggle-nav__header {
+  cursor: pointer;
+}
+
+header .toggle-nav__header img {
+  width: 24px;
+  height: 21px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  width: calc(254px - 32px);
+  height: calc(100% - 118px);
+  z-index: 1;
+  padding: 118px 0 0 32px;
+}
+
+header nav .close-nav__header {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+}
+
+header nav a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 32px 0;
+  letter-spacing: 2.7px;
+}
+
+header nav a span {
+  font-weight: 700;
+  margin-right: 11px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 24px 0;
+}
+
+main h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+main h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+main p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 0 60px;
+}
+
+main .explore__main {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: white;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+main .explore__main span {
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  color: #0c0e18;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  background: center/cover no-repeat url(../assets/technology/background-technology-mobile.jpg);
+}
+
+main h2 {
+  color: white;
+  margin: 0 0 32px;
+}
+
+main h2 span {
+  opacity: 25%;
+  margin-right: 18px;
+}
+
+main .tech-preview__main {
+  width: calc(100% + 48px);
+  height: auto;
+  margin-bottom: 34px;
+}
+
+main .tech-picker__main {
+  margin-bottom: 26px;
+}
+
+main .tech-picker__main button {
+  font-family: "Bellefair", serif;
+  font-size: 16px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background: #0c0e18;
+  border: 1px solid white;
+}
+
+main .tech-picker__main button.selected {
+  background: white;
+  color: #0c0e18;
+}
+
+main h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+  margin: 0 0 9px 0;
+}
+
+main h1 {
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+}
+
+main .animate-next {
+  animation: tech-in 0.3s linear reverse, tech-out 0.3s linear 0.3s reverse;
+}
+
+main .animate-previous {
+  -webkit-animation: tech-out 0.3s linear, tech-in 0.3s linear 0.3s;
+          animation: tech-out 0.3s linear, tech-in 0.3s linear 0.3s;
+}
+
+@-webkit-keyframes tech-out {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+
+@keyframes tech-out {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+
+@-webkit-keyframes tech-in {
+  from {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes tech-in {
+  from {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=tech.css.map */

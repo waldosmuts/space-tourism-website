@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400 !important;
+  color: #d2d8f9;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px;
+}
+
+header .home__header, header .toggle-nav__header, header .close-nav__header {
+  cursor: pointer;
+}
+
+header .home__header img {
+  width: 40px;
+  height: 40px;
+}
+
+header .toggle-nav__header {
+  cursor: pointer;
+}
+
+header .toggle-nav__header img {
+  width: 24px;
+  height: 21px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  width: calc(254px - 32px);
+  height: calc(100% - 118px);
+  z-index: 1;
+  padding: 118px 0 0 32px;
+}
+
+header nav .close-nav__header {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+}
+
+header nav a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 32px 0;
+  letter-spacing: 2.7px;
+}
+
+header nav a span {
+  font-weight: 700;
+  margin-right: 11px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 24px 0;
+}
+
+main h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+main h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+main p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 0 60px;
+}
+
+main .explore__main {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: white;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+main .explore__main span {
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  color: #0c0e18;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  background: center/cover no-repeat url(../assets/crew/background-crew-mobile.jpg);
+}
+
+main h2 {
+  color: white;
+  margin: 0 0 32px;
+}
+
+main h2 span {
+  opacity: 25%;
+  margin-right: 18px;
+}
+
+main .crew-preview__main {
+  height: 223px;
+}
+
+main .crew-picker__main {
+  margin-bottom: 32px;
+}
+
+main .crew-picker__main button {
+  background: white;
+  opacity: 0.2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+main .crew-picker__main button.selected {
+  opacity: 1;
+}
+
+main h3, main h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-size: 16px;
+  opacity: 0.5;
+  margin: 0 0 8px;
+}
+
+main h1 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
+main p {
+  margin-bottom: 32px;
+}
+
+main .divider {
+  height: 1px;
+  background: #383B4B;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+main .destination-stat__main {
+  text-align: center;
+  margin-top: 32px;
+}
+
+main .destination-stat__main .stat-title__main {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  margin-bottom: 12px;
+}
+
+main .destination-stat__main .stat-info__main {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main .animate-next {
+  animation: crew-in 0.5s ease-in reverse, crew-out 0.5s ease-out 0.5s reverse;
+}
+
+main .animate-previous {
+  -webkit-animation: crew-out 0.5s ease-out, crew-in 0.5s ease-in 0.5s;
+          animation: crew-out 0.5s ease-out, crew-in 0.5s ease-in 0.5s;
+}
+
+@-webkit-keyframes crew-out {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(200vw);
+            transform: translateX(200vw);
+  }
+}
+
+@keyframes crew-out {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(200vw);
+            transform: translateX(200vw);
+  }
+}
+
+@-webkit-keyframes crew-in {
+  from {
+    -webkit-transform: translateX(-200vw);
+            transform: translateX(-200vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes crew-in {
+  from {
+    -webkit-transform: translateX(-200vw);
+            transform: translateX(-200vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=crew.css.map */
