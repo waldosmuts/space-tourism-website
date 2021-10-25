@@ -2,7 +2,7 @@ let dataObj = null;
 let currDestination = 0;
 
 async function getDataObj() {
-    dataObj = await $.getJSON("../assets/data.json");
+    dataObj = await $.getJSON("./assets/data.json");
 }
 
 getDataObj();

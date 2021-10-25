@@ -2,7 +2,7 @@ let dataObj = null;
 let currTech = 0;
 
 async function getDataObj() {
-    dataObj = await $.getJSON("../assets/data.json");
+    dataObj = await $.getJSON("./assets/data.json");
 }
 
 getDataObj();
