@@ -18,3 +18,72 @@ main {
         margin: 0 0 16px;
     }
 }
+
+@media screen and (min-width: 760px) {
+    body {
+        background: center / cover no-repeat url(../assets/home/background-home-tablet.jpg);
+    }
+    
+    main {
+        padding: 106px 159px 0;
+        h2 {
+            margin: 0 0 24px;
+            font-size: 20px;
+            letter-spacing: 3.4px;
+        }
+        h1 {
+            font-size: 150px;
+            line-height: 150px;
+            margin: 0 0 24px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0 0 156px;
+        }
+        .explore__main {
+            width: 242px;
+            height: 242px;
+            span {
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: center / cover no-repeat url(../assets/home/background-home-desktop.jpg);
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 250px 165px 0 !important;
+        .content__main {
+            align-items: flex-start;
+            h2 {
+                font-size: 28px;
+                margin: 0 0 24px;
+            }
+            h1 {
+                font-size: 150px;
+                margin: 0 0 24px;
+                line-height: 170px;
+            }
+            p {
+                text-align: start;
+                font-size: 18px;
+            }
+        }
+        .explore__main {
+            width: 274px;
+            height: 274px;
+            span {
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

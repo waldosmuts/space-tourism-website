@@ -13,10 +13,11 @@
   <header>
     <a href="." class="home__header"><img src="./assets/shared/logo.svg" alt="Logo"></a>
     <span class="toggle-nav__header"><img src="./assets/shared/icon-hamburger.svg" alt="Open Menu"></span>
+    <div class="divider"></div>
     <nav>
       <span class="close-nav__header"><img src="./assets/shared/icon-close.svg" alt="Close Menu"></span>
       <a href="."><span>00</span> Home</a>
-      <a href="./destination.html"><span>01</span> Destination</a>
+      <a href="./destination.html" class="selected"><span>01</span> Destination</a>
       <a href="./crew.html"><span>02</span> Crew</a>
       <a href="./technology.html"><span>03</span> Technology</a>
     </nav>
@@ -24,26 +25,30 @@
   <main>
     <h2 class="fade-me"><span>01</span>Pick your destination</h2>
     <img src="./assets/destination/image-moon.webp" alt="" class="destination-preview__main animate-me">
-    <div class="destination-picker__main fade-me">
-      <span id="destination-moon" class="selected">Moon</span>
-      <span id="destination-mars">Mars</span>
-      <span id="destination-europa">Europa</span>
-      <span id="destination-titan">Titan</span>
-    </div>
-    <h1 class="fade-me">Moon</h1>
-    <p class="destination-description__main fade-me">
-      See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-      regain perspective and come back refreshed. While you’re there, take in some history
-      by visiting the Luna 2 and Apollo 11 landing sites.
-    </p>
-    <div class="divider fade-me"></div>
-    <div class="destination-stat__main fade-me">
-      <p class="stat-title__main">Avg. distance</p>
-      <p class="stat-info__main">384,400 km</p>
-    </div>
-    <div class="destination-stat__main fade-me">
-      <p class="stat-title__main">Est. travel time</p>
-      <p class="stat-info__main">3 days</p>
+    <div class="content__main">
+      <div class="destination-picker__main fade-me">
+        <span id="destination-moon" class="selected">Moon</span>
+        <span id="destination-mars">Mars</span>
+        <span id="destination-europa">Europa</span>
+        <span id="destination-titan">Titan</span>
+      </div>
+      <h1 class="fade-me">Moon</h1>
+      <p class="destination-description__main fade-me">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+        regain perspective and come back refreshed. While you’re there, take in some history
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+      <div class="divider fade-me"></div>
+      <div class="destination-stats__main">
+        <div class="destination-stat__main fade-me">
+          <p class="stat-title__main">Avg. distance</p>
+          <p class="stat-info__main">384,400 km</p>
+        </div>
+        <div class="destination-stat__main fade-me">
+          <p class="stat-title__main">Est. travel time</p>
+          <p class="stat-info__main">3 days</p>
+        </div>
+      </div>
     </div>
   </main>
   <script src="./scripts/jquery-3.6.0.js"></script>

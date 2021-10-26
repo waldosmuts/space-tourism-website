@@ -76,3 +76,108 @@ main {
         transform: translateX(0);
     }
 }
+
+@media screen and (min-width: 760px) {
+    body {
+        background: center / cover no-repeat url(../assets/technology/background-technology-tablet.jpg);
+    }
+    
+    main {
+        position: relative;
+        padding: 124px 155px 0;
+        h3 {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            margin: 0 0 24px;
+            font-size: 20px;
+            letter-spacing: 3.4px;
+            position: absolute;
+            left: 39px;
+            top: 40px;
+        }
+        .tech-preview__main {
+            width: 100vw;
+            margin: 0 0 56px;
+        }
+        .tech-picker__main {
+            margin: 0 0 44px;
+            button {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 45px;
+            margin: 0 0 16px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    body {
+        background: center / cover no-repeat url(../assets/technology/background-technology-desktop.jpg);
+    }
+    
+    main {
+        position: relative;
+        padding: 250px 0 0 165px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .content__main {
+            align-items: flex-start;
+            z-index: 2;
+            width: unset;
+        }
+        h2 {
+            font-size: 28px;
+            left: 165px;
+            top: 76px;
+        }
+        .tech-preview__main {
+            width: 515px;
+            height: auto;
+            position: absolute;
+            top: 163px;
+            right: 0;
+        }
+        .tech-picker__main {
+            display: flex;
+            flex-direction: column;
+            margin: 0 80px 0 0;
+            button {
+                width: 80px;
+                height: 80px;
+                margin: 0 0 32px 0;
+                font-size: 32px;
+            }
+        }
+        h3 {
+            font-size: 32px;
+            line-height: 37px;
+            margin: 0 0 15px 0;
+        }
+        h1 {
+            font-size: 56px;
+            line-height: 64px;
+            margin: 0 0 27px 0;
+        }
+        p {
+            text-align: left;
+            font-size: 18px;
+            max-width: 445px;
+            line-height: 32px;
+            height: unset;
+            margin: 0;
+        }
+    }
+}

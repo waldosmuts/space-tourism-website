@@ -3,6 +3,9 @@ let currTech = 0;
 
 async function getDataObj() {
     dataObj = await $.getJSON("./assets/data.json");
+    if (window.innerWidth > 1350) {
+        $(".tech-preview__main").attr("src", dataObj.technology[0].images.portrait);
+    }
 }
 
 getDataObj();
@@ -40,10 +43,14 @@ function changeTech(tech) {
     } else {
         animatePreviousTech();
     }
-    $(".fade-me").fadeOut(300);
+    $(".fade-me").fadeOut(100);
     setTimeout(() => {
         $(".fade-me").fadeIn(300);
-        $(".tech-preview__main").attr("src", dataObj.technology[tech].images.landscape);
+        if (window.innerWidth > 1350) {
+            $(".tech-preview__main").attr("src", dataObj.technology[tech].images.portrait);
+        } else {
+            $(".tech-preview__main").attr("src", dataObj.technology[tech].images.landscape);
+        }
         $("h1").text(dataObj.technology[tech].name);
         $(".tech-description__main").text(dataObj.technology[tech].description);
     }, 300)

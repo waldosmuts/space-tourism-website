@@ -63,6 +63,7 @@ main {
     }
     p {
         margin-bottom: 32px;
+        max-width: 327px;
     }
     .divider {
         height: 1px;
@@ -112,3 +113,104 @@ main {
         transform: translateX(0) scale(1);
     }
 }
+
+@media screen and (min-width: 760px) {
+    body {
+        background: center / cover no-repeat url(../assets/destination/background-destination-tablet.jpg);
+    }
+    
+    main {
+        position: relative;
+        padding: 124px 98px 0;
+        h2 {
+            margin: 0 0 24px;
+            font-size: 20px;
+            letter-spacing: 3.4px;
+            position: absolute;
+            left: 39px;
+            top: 40px;
+        }
+        .destination-preview__main {
+            width: 300px;
+            height: 300px;
+            margin: 0 0 53px;
+        }
+        .destination-picker__main {
+            margin-bottom: 42px;
+            span {
+                font-size: 16px;
+                margin: 0 16px;
+                padding: 0 0 15px;
+            }
+        }
+        h1 {
+            font-size: 80px;
+            line-height: 92px;
+            margin: 0 0 8px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0 0 49px;
+        }
+        .destination-stats__main {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    body {
+        background: center / cover no-repeat url(../assets/destination/background-destination-desktop.jpg);
+    }
+    
+    main {
+        position: relative;
+        padding: 175px 160px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        .content__main {
+            align-items: flex-start;
+            z-index: 2;
+        }
+        h2 {
+            font-size: 28px;
+            left: 165px;
+            top: 76px;
+        }
+        .destination-preview__main {
+            width: 445px;
+            height: 445px;
+            margin: 50px 0 0 50px;
+        }
+        .destination-picker__main {
+            margin: 0 0 37px 0;
+            span {
+                margin: 0 35px 0 0;
+            }
+        }
+        h1 {
+            font-size: 100px;
+            margin: 0 0 14px 0;
+        }
+        p {
+            text-align: left;
+            font-size: 18px;
+        }
+        .destination-stats__main {
+            justify-content: flex-start;
+            .destination-stat__main {
+                width: 100%;
+                .stat-title__main {
+                    font-size: 14px;
+                }
+                .stat-info__main {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
